@@ -1,0 +1,150 @@
+﻿<Window x:Class="VigenereGui.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Szyfrator/Deszyfrator Vigenere" Height="529.255" Width="900.798"
+        Background="AntiqueWhite">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <ScrollViewer Grid.Row="1" Grid.ColumnSpan="5"
+                      VerticalScrollBarVisibility="Auto" 
+                      HorizontalScrollBarVisibility="Disabled" 
+                      HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                      Margin="5"
+                      Background="White">
+            <TextBlock x:Name="logTextBlock"
+                       FontSize="15"
+                       TextWrapping="Wrap"/>
+        </ScrollViewer>
+        <StackPanel Grid.Row="0" Grid.Column="0">
+            <Button x:Name="SzyfrujButton" 
+                    Content="Szyfruj plik" 
+                    HorizontalAlignment="Center" 
+                    Margin="5" 
+                    VerticalAlignment="Center" 
+                    Height="30"
+                    Width="150" 
+                    Click="EncryptButton_Click"/>
+            <Label x:Name="label"
+                   Content="Klucz (do 10 liter):" 
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Center" 
+                   Height="30" 
+                   Width="150"
+                   Margin="5"/>
+            <TextBox x:Name="givenKeyTextBox" 
+                     HorizontalAlignment="Center" 
+                     VerticalAlignment="Center" 
+                     Height="30" 
+                     Width="150"
+                     Margin="5" 
+                     TextWrapping="Wrap" 
+                     Text=""/>
+        </StackPanel>
+        <StackPanel Grid.Row="0" Grid.Column="1">
+            <Button x:Name="DlugoscKluczaButton" 
+                    Content="Oblicz długość klucza" 
+                    HorizontalAlignment="Center" 
+                    VerticalAlignment="Center"
+                    Height="30"
+                    Width="150"
+                    Margin="5"
+                    Click="CalculateKeyLengthButton_Click"/>
+            <Label x:Name="label1" 
+                   Content="Obliczona długość klucza:" 
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Margin="5" 
+                   Height="30" 
+                   Width="150"/>
+            <TextBox x:Name="keyLengthTextBox" 
+                     HorizontalAlignment="Center"
+                     VerticalAlignment="Center" 
+                     Height="30" 
+                     Width="150"
+                     Margin="5" 
+                     TextWrapping="Wrap" 
+                     Text="" />
+        </StackPanel>
+        <StackPanel Grid.Row="0" Grid.Column="2">
+            <Button x:Name="CalculateKeyAlg1Button" 
+                    Content="Znajdź klucz (alg1)" 
+                    HorizontalAlignment="Center" 
+                    VerticalAlignment="Center"
+                    Height="30"
+                    Width="150"
+                    Margin="5"  
+                    Click="CalculateKeyValueAlg1Button_Click"/>
+            <Label x:Name="label1_Copy1" 
+                   Content="Obliczona długość klucza:" 
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Height="30"
+                   Width="150"
+                   Margin="5" />
+            <TextBox x:Name="KeyValueAlg1TextBox"
+                     HorizontalAlignment="Center" 
+                     VerticalAlignment="Center"
+                     Height="30"
+                     Width="150"
+                     Margin="5"  
+                     TextWrapping="Wrap" 
+                     Text=""/>
+        </StackPanel>
+        <StackPanel Grid.Row="0" Grid.Column="3">
+            <Button x:Name="CalculateKeyAlg2Button" 
+                    Content="Znajdź klucz (alg2)" 
+                    HorizontalAlignment="Center" 
+                    VerticalAlignment="Center"
+                    Height="30"
+                    Width="150"
+                    Margin="5"
+                    Click="CalculateKeyValueAlg2Button_Click" />
+            <Label x:Name="label1_Copy" 
+                   Content="Obliczona długość klucza:" 
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Height="30"
+                   Width="150"
+                   Margin="5"/>
+            <TextBox x:Name="KeyValueAlg2TextBox" 
+                     HorizontalAlignment="Center"
+                     VerticalAlignment="Center"
+                     Height="30"
+                     Width="150"
+                     Margin="5" 
+                     TextWrapping="Wrap" 
+                     Text=""/>
+        </StackPanel>
+        <StackPanel Grid.Row="0" Grid.Column="4">
+            <Button x:Name="DecryptButtonAlg1" 
+                    Content="Odszyfruj plik (alg1)" 
+                    HorizontalAlignment="Center" 
+                    VerticalAlignment="Center" 
+                    Height="30"
+                    Width="150" 
+                    Margin="5"
+                    Click="DecryptButtonAlg1_Click"/>
+            <Button x:Name="DecryptButtonAlg2" 
+                    Content="Odszyfruj plik (alg2)" 
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Height="30"
+                    Width="150"
+                    Margin="5"
+                    Click="DecryptButtonAlg2_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

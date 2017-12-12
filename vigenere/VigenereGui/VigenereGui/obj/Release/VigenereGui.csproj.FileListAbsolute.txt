@@ -1,0 +1,14 @@
+C:\Vigenere\vigenere\VigenereGui\VigenereGui\bin\Release\VigenereGui.exe.config
+C:\Vigenere\vigenere\VigenereGui\VigenereGui\bin\Release\VigenereGui.exe
+C:\Vigenere\vigenere\VigenereGui\VigenereGui\bin\Release\VigenereGui.pdb
+C:\Vigenere\vigenere\VigenereGui\VigenereGui\obj\Release\MainWindow.g.cs
+C:\Vigenere\vigenere\VigenereGui\VigenereGui\obj\Release\App.g.cs
+C:\Vigenere\vigenere\VigenereGui\VigenereGui\obj\Release\VigenereGui_MarkupCompile.cache
+C:\Vigenere\vigenere\VigenereGui\VigenereGui\obj\Release\VigenereGui_MarkupCompile.lref
+C:\Vigenere\vigenere\VigenereGui\VigenereGui\obj\Release\MainWindow.baml
+C:\Vigenere\vigenere\VigenereGui\VigenereGui\obj\Release\VigenereGui.g.resources
+C:\Vigenere\vigenere\VigenereGui\VigenereGui\obj\Release\VigenereGui.Properties.Resources.resources
+C:\Vigenere\vigenere\VigenereGui\VigenereGui\obj\Release\VigenereGui.csproj.GenerateResource.Cache
+C:\Vigenere\vigenere\VigenereGui\VigenereGui\obj\Release\VigenereGui.exe
+C:\Vigenere\vigenere\VigenereGui\VigenereGui\obj\Release\VigenereGui.pdb
+C:\Vigenere\vigenere\VigenereGui\VigenereGui\obj\Release\VigenereGui.csprojResolveAssemblyReference.cache
